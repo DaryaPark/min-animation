@@ -1,0 +1,44 @@
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    animation: anim 3s infinite;
+  }
+@keyframes anim {
+    0% {
+  transform: scaleX(1) scaleY(1) scaleZ(1);
+    }
+    50% {
+      transform: scaleX(4) scaleY(2) scaleZ(4);
+    }
+    100% {
+   transform: scaleX(1) scaleY(1) scaleZ(1);
+    }
+  }
+
+
+  /* Красный квадрат
+   */
+   .red {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: crimson;
+  }
+  
+  .red:hover {
+    animation: left 3s infinite;
+  }
+  
+  
+  @keyframes left {
+    0% {
+      transform:translate(0px, 0px)
+    }
+    50% {
+      transform:translate(200px, 150px)
+    }
+    100% {
+      transform:translateX(0px, 0px)
+    }
+  }
